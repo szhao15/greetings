@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/szhao15/greetings/hello"
+	"github.com/szhao15/greetings/greetings"
 )
 
 func main() {
-	message := hello.Hello("Stephen")
+	message := greetings.Hello("Stephen", "Zhao")
 	fmt.Println(message)
 }
