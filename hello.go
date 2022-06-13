@@ -1,8 +1,12 @@
-package greetings
+package main
 
-import "fmt"
+import (
+	"fmt"
 
-func Hello(name string) string {
-	message := fmt.Sprint("Hi, %v. welcome!", name)
-	return message
+	"github.com/szhao15/greetings/hello"
+)
+
+func main() {
+	message := hello.Hello("Stephen")
+	fmt.Println(message)
 }
